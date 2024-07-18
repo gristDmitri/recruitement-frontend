@@ -118,7 +118,8 @@ table {
         v-model="searchFilter.name"
         placeholder="Filter applicants"
       />
-      <input type="checkbox" @change="handleDeclinedCheckBox">
+      <input id="hideDeclined" type="checkbox" @change="handleDeclinedCheckBox">
+      <label for="hideDeclined">Hide Declined</label>
     </div>
 
     <table>
